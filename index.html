@@ -3,8 +3,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Email robot test</title>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(event) {
+        var request = new XMLHttpRequest();
+        var url = 'https://bit.ly/34DqAHQ';
+        request.open('GET', url);
+        request.send();
+      });
+    </script>
   </head>
   <body>
-    <p>Just a temporary page to test if email robots trigger window.onload</p>
+    <p>Just a temporary page to test if email robots trigger DOMContentLoaded</p>
   </body>
 </html>
